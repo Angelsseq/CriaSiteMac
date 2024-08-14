@@ -1,67 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>McDonald's</title>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="img/logomac.jpg">
+    <title>McDonald's</title>
 </head>
 <body>
-    <header class="header">
-        <ul>
-            <li>
-                <div class="logo">
-                    <img src="./img/mc.png"></img>
-                </div>
-            </li>
-            <li>
-                <a href="index.html">Sobre-nos</a> 
-            </li>
-            <li>
-                <a href="socios.html">Sócios</a> 
-            </li>
-            <li>
-                <button class="botaopeca" onclick="window.location.href='pedido.html'">&#x1F923; Peça seu Méqui</button>
-            </li>
-        </ul>
+    <header>
+        <img src="./img/mc.png" alt="McDonald's Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Menu</a></li>
+                <li><a href="index.html">Promoções</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="socios.html">Sócios</a></li>
+            </ul>
+        </nav>
+        <button class="botaopeca" onclick="window.location.href='pedido.html'">&#x1F923; Peça seu Méqui</button>
     </header>
-    <div class="banner">
-        <img src="./img/592_3_1_banner_home_1440x650_cb1d3e6863.png"></img>
-    </div>    
     
-    <div class="conteiner">
-        <main>
-            <section>
-                <h1>Quem somos?</h1>
-            <p>
-                Na McDonald's, somos mais do que uma rede global de restaurantes; somos
-                 um ícone de confiança, qualidade e inovação. Desde a nossa fundação em 1955, temos o compromisso de proporcionar experiências de refeição consistentes e agradáveis para milhões de clientes em todo o mundo.
-            </p>
-                <h1>Nossa missão</h1>
-            <p>
-                Nossa missão é oferecer alimentos saborosos e acessíveis em um ambiente acolhedor e conveniente. Trabalhamos incansavelmente para garantir que cada refeição, seja um clássico Big Mac, um café fresco ou uma opção mais saudável,
-                 seja preparada com os mais altos padrões de qualidade e segurança.
-            </p>
-                <h1>Nossos Valores</h1>
-                <p>
-                    QUALIDADE - Acreditamos que a qualidade é a base de nossa reputação. Utilizamos ingredientes
-                    selecionados e seguimos rigorosos processos de controle para garantir que cada refeição ofereça o sabor e a frescura que nossos clientes esperam 🏆
-                </p>
-                <p>
-                    INOVACÄO: Estamos constantemente buscando maneiras de evoluir e melhorar. Desde a introdução de novos produtos e 
-                    receitas até o aprimoramento de nossos processos e tecnologia, estamos comprometidos com a inovação para atender às necessidades e desejos de nossos clientes 💡🚀🌐
-                </p>
-                <p>
-                    RESPONSABILIDADE SOCIAL: Como um líder global, assumimos a responsabilidade de fazer a diferença em nossas comunidades. Investimos em programas de sustentabilidade,
-                     promovemos práticas de negócios éticas e apoiamos iniciativas locais que ajudam a criar um impacto positivo 🌍🤝
-                </p>
-                <p>
-                    EXPERIENCIA DO CLIENTE: A satisfação do cliente é a nossa prioridade. Treinamos nossos funcionários para oferecer
-                    um atendimento excepcional, garantimos ambientes limpos e confortáveis e buscamos constantemente feedback para melhorar 😊⭐📈
-                </p>
-            </section>
-        </main>
-    </div>
+    <section class="banner">
+        <!-- A imagem do banner está definida como background via CSS -->
+    </section>
+
+    <section class="sobre">
+        <h2>Quem Somos?</h2>
+        <p>Na McDonald's, somos mais do que uma rede global de restaurantes; somos um ícone de confiança, qualidade e inovação. Desde a nossa fundação em 1955, temos o compromisso de proporcionar experiências de refeição consistentes e agradáveis para milhões de clientes em todo o mundo.</p>
+
+        <h2>Nossa Missão</h2>
+        <p>Nossa missão é oferecer alimentos saborosos e acessíveis em um ambiente acolhedor e conveniente. Trabalhamos incansavelmente para garantir que cada refeição, seja um clássico Big Mac, um café fresco ou uma opção mais saudável, seja preparada com os mais altos padrões de qualidade e segurança.</p>
+
+        <h2>Nossos Valores</h2>
+        <ul>
+            <li><strong>QUALIDADE:</strong> Acreditamos que a qualidade é a base de nossa reputação. Utilizamos ingredientes selecionados e seguimos rigorosos processos de controle para garantir que cada refeição ofereça o sabor e a frescura que nossos clientes esperam 🏆</li>
+            <li><strong>INOVAÇÃO:</strong> Estamos constantemente buscando maneiras de evoluir e melhorar. Desde a introdução de novos produtos e receitas até o aprimoramento de nossos processos e tecnologia, estamos comprometidos com a inovação para atender às necessidades e desejos de nossos clientes 💡🚀🌐</li>
+            <li><strong>RESPONSABILIDADE SOCIAL:</strong> Como um líder global, assumimos a responsabilidade de fazer a diferença em nossas comunidades. Investimos em programas de sustentabilidade, promovemos práticas de negócios éticas e apoiamos iniciativas locais que ajudam a criar um impacto positivo 🌍🤝</li>
+            <li><strong>EXPERIÊNCIA DO CLIENTE:</strong> A satisfação do cliente é a nossa prioridade. Treinamos nossos funcionários para oferecer um atendimento excepcional, garantimos ambientes limpos e confortáveis e buscamos constantemente feedback para melhorar 😊⭐📈</li>
+        </ul>
+    </section>
 </body>
 </html>

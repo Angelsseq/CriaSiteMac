@@ -1,95 +1,137 @@
-body{
-    color: rgb(0, 0, 0);
-    background-color:rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-    margin-top: 0%;
-    margin-left: 0%;
-    margin-right: 0%;
-    padding: 0;
-    
-    
-
-}
-.header{
-    width: 100%;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    margin:0px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-ul {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
+body {
     margin: 0;
-    padding: 16px;
+    font-family: Arial, sans-serif;
 }
 
-/*Pia essa classe, to fazendo o banner ficar sobre pondo, da uma olhada dps */
-.logo{
-    width: 20px;
-    height: 20px;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    transform: scale(0.25);
-}
-
-a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    padding: 8px 16px;
-}
-
-.conteiner{
-    padding: 0 20px;
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
     display: flex;
-    flex-direction: column;   
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* faz o header ficar em cima dos outros */
+}
+
+.logo {
+    width: 120px;
+    margin-right: 120px; /* Espaço entre a logo e o menu */
+    margin-left: 60px;
+}
+
+nav {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 10px 0 10px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    
 }
 
-/*Ver dq a pouco*/
+nav ul li {
+    margin: 0 15px; /* Adiciona espaço entre os itens do menu */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #d52b1e;
+}
+
+.botaopeca {
+    background-color: #d52b1e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 120px; /* Espaço entre o menu e o botão */
+}
+
+.botaopeca:hover {
+    background-color: #a31e13;
+}
+
 .banner {
-    margin:0px;
-    margin-left: 0px;
-    margin-right:1000px;
-    margin-top: 0%;
-    border-radius: 00%;
-    box-shadow: 0 2px 4px #ffffff ;
-    transform: scale(0.75);
-    
+    background-image: url('./img/592_3_1_banner_home_1440x650_cb1d3e6863.png');
+    background-size: cover;
+    background-position: center;
+    height: 650px; /* Altura do banner */
+    width: 100%;
+    margin-top: 0px; /* Espaçamento entre o header e o banner */
 }
 
+/* Estilo para a seção "Quem Somos" */
+.sobre {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sobre h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.sobre p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.sobre ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sobre ul li {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.sobre ul li strong {
+    display: block;
+    font-size: 1.4em;
+    color: #333;
+}
 .h1 {
     margin-top: 20px;
     text-align: center;
 }
-
-.card-container {
+.cards {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    margin: 30px;
-    justify-content: center; /* Centralizar cartões horizontal */
-    gap: 00px; /* coloca espaço entre cartões */
+    gap: 20px;
+    padding: 20px;
 }
 
-.card{
-    background-color: rgb(223, 220, 220);
+.card {
+    background-color: #f9f9f9;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    margin: 10px;
-    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     width: 300px;
-    text-align:justify;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    flex-direction: row;
-    
+    padding: 20px;
+    text-align: center;
 }
+
 .card img {
     border-radius: 50%;
     width: 150px;
@@ -97,22 +139,21 @@ a{
     object-fit: cover;
     display: block;
     margin: 0 auto; /* Centraliza imagem do card */
-    
 }
 .card h2 {
-    margin: 10px 0;
-    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
 }
-.botaopeca{
-    background-color:#ffd700;
-    color: #000000;
-    padding: 15px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
+
+.card p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+    margin: 5px 0;
+}
+
+.card strong {
+    display: block;
+    margin-bottom: 5px;
 }

@@ -1,53 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>McDonald's</title>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="img/logomac.jpg">
+    <title>Sócios</title>
 </head>
 <body>
-    <header class="header">
-        <ul>
-            <li>
-                <div class="logo">
-                    <img src="./img/mc.png"></img>
-                </div>
-            </li>
-            <li>
-                <a href="index.html">Sobre-nos</a> 
-            </li>
-            <li>
-                <a href="socios.html">Sócios</a> 
-            </li>
-            <li>
-                <button class="botaopeca" onclick="window.location.href='pedido.html'">&#x1F923; Peça seu Méqui</button>
-            </li>
-        </ul>
-    </header>  
-    <div class="conteiner">
-    </div>    
+    <header>
+        <img src="./img/mc.png" alt="McDonald's Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Menu</a></li>
+                <li><a href="index.html">Promoções</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="socios.html">Sócios</a></li>
+            </ul>
+        </nav>
+        <button class="botaopeca" onclick="window.location.href='pedido.html'">&#x1F923; Peça seu Méqui</button>
+    </header>
     <h1 class="h1">Nossos Sócios</h1>
-    <div class="card">
-        <img src="img/angelo.jpeg" alt="Foto Sócio 1">
-        <h2>Angelo Sequinel</h2>
-        <p><strong>Curso:</strong> Engenharia de Software</p>
-        <p><strong>Universidade:</strong> Pontifícian Universidade Católica</p>
-        <p><strong>Ano de Graduação:</strong> 2025</p>
-        <p><strong>Especialidades:</strong> Capoeira Básica e confecções de bolos</p>
-        <p><strong>Hobbies:</strong> Peaky Blinder e contar mentiras</p>
-         <p><strong>Email:</strong> angelsseq@gmail.com</p>
-    </div>
-    <div class="card">
-        <img src="img/vinicius.jpeg" alt="Foto Sócio 2">
-        <h2>Vinicius Captzan</h2>
-        <p><strong>Curso:</strong> Engenharia de Software</p>
-        <p><strong>Universidade:</strong> Pontifícian Universidade Católica</p>
-        <p><strong>Ano de Graduação:</strong> 2028</p>
-        <p><strong>Especialidades:</strong> Sorri e ir ao odontologista</p>
-        <p><strong>Hobbies:</strong> programar web e ir ao odontologista</p>
-        <p><strong>Email:</strong> vinicius@viados.com</p>
-    </div>
+    <section class="cards">
+        <div class="card">
+            <img src="img/angelo.jpeg" alt="Foto Sócio 1">
+            <h2>Angelo Sequinel</h2>
+            <p><strong>Curso:</strong> Engenharia de Software</p>
+            <p><strong>Universidade:</strong> Pontifícia Universidade Católica</p>
+            <p><strong>Ano de Graduação:</strong> 2025</p>
+            <p><strong>Especialidades:</strong> Capoeira Básica e confecção de bolos</p>
+            <p><strong>Hobbies:</strong> Peaky Blinders e contar mentiras</p>
+            <p><strong>Email:</strong> angelsseq@gmail.com</p>
+        </div>
+        <div class="card">
+            <img src="img/vinicius.jpeg" alt="Foto Sócio 2">
+            <h2>Vinicius Captzan</h2>
+            <p><strong>Curso:</strong> Engenharia de Software</p>
+            <p><strong>Universidade:</strong> Pontifícia Universidade Católica</p>
+            <p><strong>Ano de Graduação:</strong> 2028</p>
+            <p><strong>Especialidades:</strong> Sorri e ir ao odontologista</p>
+            <p><strong>Hobbies:</strong> Programar web e ir ao odontologista</p>
+            <p><strong>Email:</strong> vinicius@viados.com</p>
+        </div>
+    </section>
 </body>
 </html>
