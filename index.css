@@ -17,8 +17,8 @@ header {
 
 .logo {
     width: 120px;
-    margin-right: 120px; /* Espaço entre a logo e o menu */
-    margin-left: 60px;
+    margin-right: 80px; /* Espaço entre a logo e o menu */
+    margin-left: 120px;
 }
 
 nav {
@@ -57,7 +57,8 @@ nav ul li a:hover {
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    margin-left: 120px; /* Espaço entre o menu e o botão */
+    margin-left: 80px; /* Espaço entre o menu e o botão */
+    margin-right: 120px;
 }
 
 .botaopeca:hover {
@@ -156,4 +157,76 @@ nav ul li a:hover {
 .card strong {
     display: block;
     margin-bottom: 5px;
+}
+/* Estilo geral do footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    font-size: 14px;
+}
+
+/* Conteúdo principal do footer, contém todas as seções */
+.conteudo-footer {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* Estilo para cada seção do footer */
+.secao-footer {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Título de cada seção */
+.secao-footer h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+/* Estilo para parágrafos e listas dentro das seções */
+.secao-footer p,
+.secao-footer ul li {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+/* Estilo para as listas */
+.secao-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilo para links dentro das listas */
+.secao-footer ul li a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+/* Efeito hover nos links */
+.secao-footer ul li a:hover {
+    color: #fff;
+}
+
+/* Estilo dos ícones sociais */
+.icones-sociais a {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+/* Efeito hover nos ícones sociais */
+.icones-sociais a:hover {
+    color: #d52b1e;
+}
+
+/* Rodapé inferior com aviso de copyright */
+.rodape {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+    margin-top: 20px;
 }
