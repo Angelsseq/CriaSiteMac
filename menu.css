@@ -1,0 +1,48 @@
+
+.banner {
+    background-image: url('./img/592_3_1_banner_home_1440x650_cb1d3e6863.png');
+    background-size: cover;
+    background-position: center;
+    height: 650px; /* Altura do banner */
+    width: 100%;
+    margin-top: 0px; /* Espaçamento entre o header e o banner */
+}
+
+/* Estilo para a seção "Quem Somos" */
+.sobre {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sobre h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.sobre p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.sobre ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sobre ul li {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.sobre ul li strong {
+    display: block;
+    font-size: 1.4em;
+    color: #333;
+}
+
