@@ -5,6 +5,14 @@ main {
     max-width: 800px;
     margin: auto;
 }
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
 
 /* Título do formulário */
 h1 {
@@ -17,10 +25,8 @@ h1 {
 /* Estilo dos grupos de formulário */
 .grupo-formulario {
     margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+    padding: 15px;  
+    border-radius: 8px;   
 }
 
 /* Estilo dos rótulos */

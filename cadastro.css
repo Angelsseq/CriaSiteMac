@@ -1,0 +1,64 @@
+/* Estilo geral do formulário */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Estilo dos rótulos */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilo dos campos de entrada e textarea */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilo dos botões */
+form input[type="submit"],
+form input[type="reset"] {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto branco */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form input[type="reset"] {
+    background-color: #f44336; /* Cor de fundo vermelha para o botão de reset */
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    opacity: 0.8; /* Efeito de opacidade ao passar o mouse sobre os botões */
+}
+
+/* Adiciona margem inferior aos campos */
+form input[type="text"]:last-of-type,
+form input[type="email"]:last-of-type,
+form input[type="tel"]:last-of-type,
+form input[type="password"]:last-of-type,
+form textarea:last-of-type {
+    margin-bottom: 20px;
+}
