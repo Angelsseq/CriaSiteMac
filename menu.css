@@ -8,7 +8,7 @@
     margin-top: 0px; /* Espaçamento entre o header e o banner */
 }
 
-/* Estilo para a seção "Quem Somos" */
+/* Estilo para a seção "Quem Somos" */ 
 .sobre {
     padding: 40px 20px;
     max-width: 1200px;
@@ -16,6 +16,7 @@
 }
 
 .sobre h2 {
+    text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
     color: #333;
@@ -44,5 +45,38 @@
     display: block;
     font-size: 1.4em;
     color: #333;
+}
+/* teste */
+.sobre .item {
+    margin-top: 1%;
+    margin-bottom: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.titulo {
+    cursor: pointer;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    transition: padding 0.3s ease;
+}
+
+.conteudo {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+}
+
+.item:hover .titulo {
+    padding: 20px 40px; /* Aumenta o padding do título ao passar o mouse */
+}
+
+.item:hover .conteudo {
+    max-height: 500px; /* Ajuste para acomodar o conteúdo */
+    opacity: 1;
+    padding: 10px 20px;
 }
 

@@ -20,6 +20,10 @@
     width: 300px;
     padding: 20px;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+.card:hover{
+    transform: scale(1.2);
 }
 
 .card img {
@@ -30,6 +34,7 @@
     display: block;
     margin: 0 auto; /* Centraliza imagem do card */
 }
+
 .card h2 {
     font-size: 1.5em;
     margin-bottom: 10px;

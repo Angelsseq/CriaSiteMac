@@ -1,7 +1,16 @@
 /* Estilo geral do formulário */
+h1{
+    color: #d52b1e;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
 form {
     max-width: 600px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 30%;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
