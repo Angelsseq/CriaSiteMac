@@ -64,7 +64,7 @@
 }
 
 .conteudo {
-    max-height: 10;
+    max-height: 0;
     opacity: 0;
     overflow: hidden;
     padding: 0;
