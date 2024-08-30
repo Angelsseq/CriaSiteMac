@@ -32,5 +32,23 @@ document.addEventListener("DOMContentLoaded", function() {
             promocoes: promocoes
         };
 
-       
+        // Enviar o pedido via fetch (substituir a URL '/pedido.js' pela URL correta do seu servidor)
+        fetch("/pedido.js", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(pedido)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log("Pedido enviado com sucesso:", data);
+            alert("Pedido enviado com sucesso!");
+            form.reset(); // Limpa o formulário
+        })
+        .catch((error) => {
+            console.error("Erro ao enviar o pedido:", error);
+            alert("Ocorreu um erro ao enviar o pedido. Tente novamente.");
+        });
+    });
 });
