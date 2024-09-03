@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoa", function() {
     const form = document.getElementById("pedido-form");
 
     form.addEventListener("submit", function(event) {
