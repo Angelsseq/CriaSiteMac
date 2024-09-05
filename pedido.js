@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Cria um objeto com os dados do pedido
         const pedido = {
-            produto: produ,
+            produto: produt,
             quantidade: quantidade,
             bebida: bebida,
             tamanhoBatata: tamanhoBatata,
