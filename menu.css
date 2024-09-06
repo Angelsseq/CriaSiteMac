@@ -78,6 +78,6 @@
 .item:hover .conteudo {
     max-height: 500px; /* Ajuste para acomodar o conteúdo */
     opacity: 1;
-    padding: 10px 20px;
+    padding: 100px 20px;
 }
 
